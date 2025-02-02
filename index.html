@@ -9,9 +9,11 @@
     <script type="text/babel">
         const root = document.getElementById("root");
 
-        function Btn({ text }) {
+        function Btn({ text, changeValue }) {
+            console.log(text, `was rendered`);
             return (
                 <button
+                    onClick={changeValue}
                     style={{
                         backgroundColor: "tomato",
                         color: "white",
@@ -25,11 +27,14 @@
             );
         }
 
+        const MemorizedBtn = React.memo(Btn);
         const App = () => {
+            const [value, setValue] = React.useState("Save Changes");
+            const changeValue = () => setValue("Revert Changes");
             return (
                 <div>
-                    <Btn text="Save Changes" />
-                    <Btn text="Confirm" />
+                    <MemorizedBtn text={value} changeValue={changeValue} />
+                    <MemorizedBtn text="Confirm" />
                 </div>
             );
         };
