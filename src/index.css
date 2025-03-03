@@ -1,0 +1,22 @@
+body {
+    background-color: #eed9d4;
+    margin: 0;
+    padding: 0;
+    padding: 150px 0;
+    font-family: Arial, sans-serif;
+}
+
+/* 스크롤바 */
+::-webkit-scrollbar {
+    width: 10px;
+}
+::-webkit-scrollbar-track {
+    background: #eed9d4;
+}
+::-webkit-scrollbar-thumb {
+    background: #de7470;
+    border-radius: 5px;
+}
+::-webkit-scrollbar-thumb:hover {
+    background: #b04c48;
+}
