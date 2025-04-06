@@ -2,19 +2,19 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh;
+    height: 100%;
     margin-top: 100px;
     padding: 20px;
-    background: linear-gradient(to bottom, #f3e0dc, #eed9d4);
+    background: linear-gradient(var(--background-color), var(--medium-color));
+    box-sizing: border-box;
 }
 
 .movieCard {
-    background: white;
+    background: var(--background-color);
     padding: 30px;
     border-radius: 20px;
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
     width: 350px;
-    max-width: 90%;
     text-align: center;
     position: relative;
 }
@@ -27,15 +27,15 @@
 }
 
 .movieTitle {
-    font-size: 22px;
+    font-size: 18px;
     font-weight: bold;
-    color: #de7470;
+    color: var(--super-dark-color);
     margin-bottom: 8px;
 }
 
 .movieInfo {
     font-size: 14px;
-    color: #5a4a42;
+    color: var(--text-color);
     margin: 5px 0;
 }
 
@@ -50,7 +50,7 @@
 }
 
 .genreItem {
-    background: #de7470;
+    background: var(--super-dark-color);
     color: white;
     font-size: 12px;
     padding: 6px 12px;
@@ -76,7 +76,7 @@
     font-weight: bold;
     font-size: 14px;
     transition: opacity 0.3s ease-in-out;
-    background: #de7470;
+    background: var(--super-dark-color);
     padding: 10px 15px;
     border-radius: 15px;
 }

@@ -2,11 +2,11 @@ function Loading() {
     return (
         <label
             style={{
-                color: "#de7470",
+                color: "var(--super-dark-color)",
                 fontSize: "15px",
                 position: "absolute",
                 top: "50%",
-                left: "50%",
+                left: "49.5%",
             }}
         >
             Loading...

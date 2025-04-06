@@ -1,8 +1,9 @@
+@import "variables.css";
+
 body {
-    background-color: #eed9d4;
+    background-color: var(--background-color);
     margin: 0;
-    padding: 0;
-    padding: 150px 0;
+    padding: 150px 0 0 0;
     font-family: Arial, sans-serif;
 }
 
@@ -11,12 +12,9 @@ body {
     width: 10px;
 }
 ::-webkit-scrollbar-track {
-    background: #eed9d4;
+    background: var(--background-color);
 }
 ::-webkit-scrollbar-thumb {
-    background: #de7470;
+    background: var(--dark-color);
     border-radius: 5px;
-}
-::-webkit-scrollbar-thumb:hover {
-    background: #b04c48;
 }

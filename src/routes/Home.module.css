@@ -1,8 +1,6 @@
 .container {
     display: flex;
-    flex-direction: column;
-    justify-self: center;
+    text-align: center;
     gap: 300px;
-    position: relative;
-    left: 17px;
+    padding-left: 32%;
 }
